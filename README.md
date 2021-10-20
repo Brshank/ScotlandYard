@@ -45,17 +45,12 @@ This software has been released under the GNU Public license (GPL).
 
 ACKNOWLEDGMENTS
 ---------------
-
-Thanks to the following individuals for their contribution to this project.
-
-Asim Shankar and Kumar Gaurav - for their initial help in conceptualizing the project, and implementing the GUI
-Istvan Fundelits - for pointing out several errors in the map file
-
-
+We would like to thank our teachers, Dr.Sharath Raghavendra & Radhika Chapaneri to impart us the knowledge required to build this project.
+And prof. RCH for giving this wonderful opportunity to explore the subject in detail.
 SUGGESTIONS AND FEEDBACK
 ------------------------
 
-Please mail in your suggestions/feedback to Shashi Mittal (shashi.mittal@gmail.com)
+Please mail in your suggestions/feedback to Brshank Singh Negi (brsshanksn@gmail.com) OR Hansin Patwa (hansintpatwa@gmail.com) .
 
-April 19, 2010
-Cambridge, MA, USA.
+October 20, 2021
+NMIMS MPSTME, Mumbai, Maharashtra, INDIA.
