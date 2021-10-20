@@ -36,6 +36,8 @@ Please run the C++ program!
 ![Graph for The Scotland Yard](https://cdn.discordapp.com/attachments/879210338657116195/900450038445117480/img.png)
 
 ![caption](https://media.giphy.com/media/LhK8MLAQMO1alCiL5j/giphy.gif)
+
+
 WHO ALL SHOULD BE INTERESTED IN THIS SOFTWARE
 -----------------------------------------
 
