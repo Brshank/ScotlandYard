@@ -7,8 +7,14 @@ This is a custom version of the classic board game, Scotland Yard .The game uses
 AUTHORS
 -------
 Brshank Singh Negi (I032)
+
+
 Hansin Patwa       (I040)
+
+
 Devesh Pawar       (I041)
+
+
 Yaashie Sabla      (I052)
 
 FILES IN THIS PACKAGE
