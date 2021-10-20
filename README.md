@@ -6,22 +6,19 @@ This is version 2.4 of the classic board game, Scotland Yard (originally due to 
 
 AUTHORS
 -------
-
-Johannes Jowereit
-Shashi Mittal
+Brshank Singh Negi (I032)
+Hansin Patwa       (I040)
+Devesh Pawar       (I041)
+Yaashie Sabla      (I052)
 
 FILES IN THIS PACKAGE
 ---------------------
 
 This package consists of the following files and directories :
 
-src : This contains the source code of the project. All the source files are in this directory. The source files are well documented and quite readable, so if somebody wants to work on this project, he can easily do so.
+src : This contains the source code of the project. The Code is well documented and quite readable, so if somebody wants to work on this project, he can easily do so.
 
-bin : This containes all the class files in the directory game, and also the executable jar file.
-
-help : Has help files for the game. There are 7 html pages which briefly give the rules of the game.
-
-doc : The documentation of the source files, generated using Javadoc.
+img: Contains the Map of the Game for visualization.
 
 RUNNING THE GAME
 ----------------
