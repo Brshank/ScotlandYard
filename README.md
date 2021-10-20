@@ -52,5 +52,5 @@ SUGGESTIONS AND FEEDBACK
 
 Please mail in your suggestions/feedback to Brshank Singh Negi (brsshanksn@gmail.com) OR Hansin Patwa (hansintpatwa@gmail.com) .
 
-October 20, 2021
-NMIMS MPSTME, Mumbai, Maharashtra, INDIA.
+/nOctober 20, 2021
+/nNMIMS MPSTME, Mumbai, Maharashtra, INDIA.
