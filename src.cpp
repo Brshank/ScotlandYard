@@ -3,6 +3,7 @@
 #include <vector>
 #include <ctime>
 #include <stdlib.h>
+#include <windows.h>
 using namespace std;
 
 class Logic 
