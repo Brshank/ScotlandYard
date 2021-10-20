@@ -2,7 +2,7 @@
 GAME OF SCOTLAND YARD
 ---------------------
 
-This is a custom version of the classic board game, Scotland Yard .The game uses the London map used in the original game. The moves of Mr. X are made by the machine, and the moves of the detectives are to be made by the human player. This version has an improved AI for Mr. X, and also features the use of black tickets by Mr. X. i18n support and German translation added as well.
+This is a custom version of the classic board game, Scotland Yard .The game uses the London map used in the original game. The moves of Mr. X are made by the machine, and the moves of the detectives are to be made by the human player(user input). This version has an improved AI for Mr. X, and also features the use of black tickets by Mr. X. i18n support and German translation added as well.
 
 **AUTHORS**
 -------
@@ -16,6 +16,10 @@ Devesh Pawar       (I041)
 
 
 Yaashie Sabla      (I052)
+
+LEARNING OUTCOMES
+---------------------
+We successfully completed our DSA project and learnt how to implement Data Structures and Algorithms into a game. The algorithm we wrote for Mr.X to select his moves had a success rate of 70%. This was the best we could achieve  in the given time frame. We plan on finishing this project with a full fledged UI and more advanced algorithms and an algorithm that controls the movement of detectives. And hope to convert it into a proper game that is actually playable. There were some other features in this game that we did not implement(such as the ticket system and different modes of travel) and would also like to implement those. 
 
 FILES IN THIS PACKAGE
 ---------------------
@@ -47,11 +51,16 @@ This software has been released under the GNU Public license (GPL).
 ACKNOWLEDGMENTS
 ---------------
 We would like to thank our teachers, Dr.Sharath Raghavendra & Radhika Chapaneri to impart us the knowledge required to build this project.
-And prof. RCH for giving this wonderful opportunity to explore the subject in detail.
+And Prof. Radhika Chapaneri for giving this wonderful opportunity to explore the subject in detail.
 SUGGESTIONS AND FEEDBACK
 ------------------------
 
 Please mail in your suggestions/feedback to Brshank Singh Negi (brsshanksn@gmail.com) OR Hansin Patwa (hansintpatwa@gmail.com) .
 
-/nOctober 20, 2021
-/nNMIMS MPSTME, Mumbai, Maharashtra, INDIA.
+
+October 20, 2021
+
+
+NMIMS MPSTME, Mumbai, Maharashtra, INDIA.
+
+
