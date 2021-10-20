@@ -33,6 +33,7 @@ img: Contains the Map of the Game for visualization.
 RUNNING THE GAME
 ----------------
 Please run the C++ program!
+![Alt text](https://cdn.discordapp.com/attachments/879210338657116195/900450038445117480/img.png)
 
 WHO ALL SHOULD BE INTERESTED IN THIS SOFTWARE
 -----------------------------------------
