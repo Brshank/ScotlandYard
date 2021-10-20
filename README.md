@@ -2,7 +2,7 @@
 GAME OF SCOTLAND YARD
 ---------------------
 
-This is a custom version of the classic board game, Scotland Yard .The game uses the London map used in the original game. The moves of Mr. X are made by the machine, and the moves of the detectives are to be made by the human player(user input). This version has an improved AI for Mr. X, and also features the use of black tickets by Mr. X. i18n support and German translation added as well.
+This is a custom version of the classic board game, Scotland Yard .The game uses the London map used in the original game. The moves of Mr. X are made by the machine, and the moves of the detectives are to be made by the human player(user input). This version has an improved AI for Mr. X, having 70% succes rate for fleeing away.
 
 **AUTHORS**
 -------
