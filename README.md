@@ -1,4 +1,4 @@
-# Scotland
+# Scotland Yard
 GAME OF SCOTLAND YARD
 ---------------------
 
