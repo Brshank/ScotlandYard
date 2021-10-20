@@ -48,10 +48,15 @@ LICENSE AND TERMS OF AGREEMENT
 
 This software has been released under the GNU Public license (GPL).
 
+
 ACKNOWLEDGMENTS
 ---------------
+
+
 We would like to thank our teachers, Dr.Sharath Raghavendra & Radhika Chapaneri to impart us the knowledge required to build this project.
 And Prof. Radhika Chapaneri for giving this wonderful opportunity to explore the subject in detail.
+
+
 SUGGESTIONS AND FEEDBACK
 ------------------------
 
