@@ -70,9 +70,15 @@ Brshank Singh Negi (brsshanksn@gmail.com)
 
 OR
 
-Hansin Patwa (hansintpatwa@gmail.com) .
+Hansin Patwa (hansintpatwa@gmail.com)
 
+OR
 
+Devesh Pawar (@gmail.com)
+
+OR
+
+Yaashie Sabla (@gmail.com)
 ----------------
 
 
