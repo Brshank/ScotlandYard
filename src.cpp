@@ -4,18 +4,17 @@
 #include <ctime>
 #include <stdlib.h>
 #include <windows.h>
+
 using namespace std;
 
 class Logic 
 {
 private:
-
   int mrXPos;
   int mrXVisible=-1;
   int turnNumber;
   bool gameEnd=false;
-public:  //All connected nodes of graph are given below
-
+  // All connected nodes of graph are given below
     vector<int> l0 =  {1, 35, 36}; 
     vector<int> l1 =  {0, 2, 8};
     vector<int> l2 =  {1, 6, 3, 7};
@@ -25,7 +24,7 @@ public:  //All connected nodes of graph are given below
     vector<int> l6 =  {2, 5, 7, 11};
     vector<int> l7 =  {2, 6, 8, 10};
     vector<int> l8 =  {1, 7, 9};
-    vector<int> l9 =  {8, 10, 18, 30, 31, 34};
+    vector<int> l9 =  {8, 10, 18, 30, 31, 34}; 
     vector<int> l10 = {7, 9, 11};
     vector<int> l11 = {6, 10, 12, 17, 18};
     vector<int> l12 = {5, 11, 13};
@@ -58,22 +57,42 @@ public:  //All connected nodes of graph are given below
     vector<int> adjList[37] = {l0, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25, l26, l27, l28, l29, l30, l31, l32, l33, l34, l35, l36};
     vector <int> DetectivePos = {-1,-1};// detective's initial location 
     int priority[37] = {0}; //all priority are set to false
+  public:
+  
+  void gameStart() //function by which our game starts.
+   {
+    turnNumber=1;//initializing turn number to 1
+    int temp1=0, temp2=0, temp3=0;//temporary variables
+   do
+    {      
+      srand(time(0));  // Initialize random node generator for all the 3 players(initializing the seed with a number from the time so as to keep the genration totaly random)
+      temp1=rand() % 37;   // %number indicates the max value that can be genrated randomly
+      temp2=rand() % 37;   //it will generate a rand number less than 37 as remainder of xmod37 is less
+      temp3=rand() % 37;
+      cout<<endl;
+    } while(temp1==temp2 || temp2==temp3 || temp3==temp1);//condition to make sure no 2 values are same
+    DetectivePos[0]=temp1;
+    DetectivePos[1]=temp2;
+    mrXPos=temp3;
+    gameLoop();
+    
+  }
     void gameLoop()   //basic Game order in which it has to be played
    {
     do
     {
       cout<<"***************** turn "<<turnNumber<<" *****************"<<endl;
-      cout<<"current detective pos: ";
+      cout<<"current detective position: ";
       for(auto x:DetectivePos)
       {
 
-        cout<<x<<" ";
+        cout<<x<<" "; 
       }
       cout<<endl;
       
-      updateKeyValues(); 
+      updateKeyValues(); //function of updating detective's position
       
-      moveX();
+      moveX();   
       //cout<<"current mr.X postion: "<<mrXPos<<endl;
       if(!gameEnd)
       {
@@ -84,9 +103,9 @@ public:  //All connected nodes of graph are given below
           }
         
         
-        checkCondition();}
+        checkCondition();  }
         turnNumber++;
-    }while(!gameEnd);
+    }while(!gameEnd); 
     return ;
   }
     void updateKeyValues() //function of updating detective's position
@@ -134,8 +153,8 @@ public:  //All connected nodes of graph are given below
       { 
         if(priority[y]>value && priority[y]>0)//condition to check if move is valid and better then the other options [MAX]
         {
-          value =priority[y];
-          choose=y;
+          value =priority[y]; 
+          choose=y; // ngbr node
         }
       }
       if (choose == -1)//the case where mr.X can only walk into a detective where he is caught
@@ -154,38 +173,8 @@ public:  //All connected nodes of graph are given below
           priority[i]=0;
       }
   }
-  void gameStart() //function by which our game starts.
-  {
-    turnNumber=1;//initializing turn number to 1
-    int temp1=0, temp2=0, temp3=0;//temporary variables
-   do
-    {      
-      srand(time(0));  // Initialize random node generator for all the 3 players(initializing the seed with a number from the time so as to keep the genration totaly random)
-      temp1=rand() % 37;   // %number indicates the max value that can be genrated randomly
-      temp2=rand() % 37;         //it will generate a rand number less than 37 as remainder of xmod37 is less
-      temp3=rand() % 37;
-      cout<<endl;
-    } while(temp1==temp2 || temp2==temp3 || temp3==temp1);//condition to make sure no 2 values are same
-    DetectivePos[0]=temp1;
-    DetectivePos[1]=temp2;
-    mrXPos=temp3;
-    gameLoop();
-    
-  }
+
   
-  
-  bool DetectiveChecker(int pos, int current)//checking for the possible moves for the detective to move
-  {
-    
-      for(auto y: DetectivePos)
-      {
-        if(pos == y)
-        {
-          return true;
-        }
-      }
-    return false;
-  }
   void moveDetective() //function which tells us the current and next position of detective and gives us option to select next loaction too
   {
     for(int x=0;x<2;x++)
@@ -210,12 +199,24 @@ public:  //All connected nodes of graph are given below
        }while(!validMove(x,temp));
     }
   }
-  bool validMove(int current,int pos )
+   bool DetectiveChecker(int pos, int current)//check if detective is there on next node or not.
+  {
+    
+      for(auto y: DetectivePos)
+      {
+        if(pos == y)
+        {
+          return true;
+        }
+      }
+    return false;
+  }
+  bool validMove(int detectiveNumber,int pos )
   { 
     bool possibleMove=false;
     bool invalidMove=false;
-    
-    for(auto x:adjList[DetectivePos[current]])  //to check if there is any possible move or not
+ 
+    for(auto x:adjList[DetectivePos[detectiveNumber]])  //to check if there is any possible move or not
     {
       if(pos==x)
       {
@@ -227,19 +228,20 @@ public:  //All connected nodes of graph are given below
       cout<<"invalid move please try again"<<endl;
       return false;
     }
-    for(auto x: DetectivePos)
+    for(auto x: DetectivePos)  //to check if there is detective or not
     {
       if(pos == x)
       {
         invalidMove=true;
       }
     }
+    
     if(invalidMove)
     {
       cout<<"there is a detective at that position"<<endl;
       return false;
     }
-    DetectivePos[current]=pos;
+    DetectivePos[detectiveNumber]=pos;
     return true;
     
   }
@@ -281,8 +283,7 @@ public:  //All connected nodes of graph are given below
   
 };
 int main()
-{
+{   system("Color F0");
     Logic one;
-    system("Color F0");
     one.gameStart();
 }
