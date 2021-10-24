@@ -74,11 +74,13 @@ Hansin Patwa (hansintpatwa@gmail.com)
 
 OR
 
-Devesh Pawar (@gmail.com)
+Devesh Pawar (deveshpawar1657@gmail.com)
 
 OR
 
-Yaashie Sabla (@gmail.com)
+Yaashie Sabla (sablayaashie@gmail.com)
+
+
 ----------------
 
 
