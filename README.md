@@ -64,26 +64,6 @@ And Prof. Radhika Chapaneri for giving this wonderful opportunity to explore the
 SUGGESTIONS AND FEEDBACK
 ------------------------
 
-Please mail in your suggestions/feedback to 
-
-Brshank Singh Negi (brsshanksn@gmail.com)
-
-OR
-
-Hansin Patwa (hansintpatwa@gmail.com)
-
-OR
-
-Devesh Pawar (deveshpawar1657@gmail.com)
-
-OR
-
-Yaashie Sabla (sablayaashie@gmail.com)
-
-
-----------------
-
-
 
 October 20, 2021
 
